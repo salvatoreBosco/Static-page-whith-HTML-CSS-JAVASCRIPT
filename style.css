@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 5, 36);
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(103, 103, 255);
+}
+
+button{
+    border-top-left-radius: 50%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 5%;
+    padding: 5px;
+    background-color: inherit;
+    border: 1px solid white;
+    font-size: larger;
+    margin-top: 15px;
+}
+
+button:hover{
+    background-color: rgb(0, 0, 133);
+}
+
+footer{
+    margin-top: 10px;
+    border-top: 1px solid white;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+/* navigation bar */
+.logo{
+    z-index: 999;
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    font-size: 25px;
+}
+.nav-tabs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 5, 37);
+    z-index: 99;
+    opacity: 0.9;
+}
+
+.nav-item{
+    margin: 10px;
+    list-style-type: none;
+}
+
+.nav-link{
+    font-size: 28px;
+}
+
+.active{
+    border-bottom: 1px solid white;
+}
+
+/* header section */
+
+header{
+    height: 50%;
+}
+
+.container{
+    height: 100%;
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.1;
+}
+
+.little-bio{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+}
+
+.little-bio h1{
+    font-size: 60px;
+}
+.little-bio h4{
+    font-size: 25px;
+}
+
+/* section home */
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+.card{
+    width: 90%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+}
+
+.info{
+    width: 30%;
+    border-right: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 60%;
+    width: 60%;
+    border: 1px solid white;
+    background-image: url('/img/profilo.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.general{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.general a{
+    color: white;
+}
+.general a:hover{
+    color: rgb(101, 124, 255);
+}
+
+.social{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-story{
+    margin-bottom: 10px;
+}
+
+.my-story h1{
+    font-size: 50px;
+}
+
+.sections{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* contact me */
+
+#contact-me{
+    margin-top: 10px;
+    border-top: 1px solid white;
+    padding-top: 40vh;
+    padding-bottom: 40vh;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p{
+    font-size: 50px;
+}
+
+.contact a{
+    font-size: 30px;
+}
+
+.contact li{
+    margin-bottom: 10px;
+}
+
