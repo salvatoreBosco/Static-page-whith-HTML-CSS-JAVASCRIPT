@@ -110,6 +110,7 @@ header{
     flex-direction: column;
     position: absolute;
     top: 20%;
+    height: fit-content;
 }
 
 .little-bio h1{
@@ -132,12 +133,13 @@ header{
 .card{
     width: 90%;
     border: 1px solid white;
+    border-radius: 20px;
     display: flex;
     flex-direction: row;
 }
 
 .info{
-    width: 30%;
+    width: 40%;
     border-right: 1px solid white;
     display: flex;
     flex-direction: column;
@@ -149,8 +151,10 @@ header{
     margin-top: 10px;
     margin-bottom: 10px;
     height: 60%;
+    min-height: 250px;
     width: 60%;
     border: 1px solid white;
+    border-radius: 20px;
     background-image: url('/img/profilo.jpeg');
     background-position: center;
     background-size: cover;
@@ -178,6 +182,7 @@ header{
 
 .my-story{
     margin-bottom: 10px;
+    width: 60%;
 }
 
 .my-story h1{
@@ -219,3 +224,101 @@ header{
     margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px){
+    
+    /* navigation bar */
+.logo{
+    z-index: 999;
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 25px;
+}
+.nav-tabs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 5, 37);
+    z-index: 99;
+    opacity: 0.9;
+}
+
+.nav-item{
+    margin: 5px;
+    list-style-type: none;
+}
+
+.nav-link{
+    font-size: 20px;
+}
+
+.active{
+    border-bottom: 1px solid white;
+}
+
+
+
+    .little-bio{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+    }
+    
+    .card{
+        width: 90%;
+        border: 1px solid white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .info{
+        width: 100%;
+        height: 40%;
+        border-bottom: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .my-img{
+        width: 60%;
+        height: 60%;
+        border: 1px solid white;
+        border-radius: 20px;
+        background-image: url('/img/profilo.jpeg');
+    }
+    
+    .social{
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .my-story{
+        margin-bottom: 10px;
+        width: 100%;
+        height: 60%;
+    }
+    
+    .sections{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+}
