@@ -23,9 +23,9 @@ activeSection(0)
 
 document.addEventListener('scroll', ()=>{
     if(window.pageYOffset >= 35){
-        document.getElementsByClassName("nav-tabs")[0].className = 'inPage'
+        document.getElementsByClassName("nav-tabs")[0].className = 'inPage nav-tabs'
     }else{
-        document.getElementsByClassName("inPage")[0].className = 'nav-tabs'
+        document.getElementsByClassName("inPage nav-tabs")[0].className = 'nav-tabs'
     }
 })
 

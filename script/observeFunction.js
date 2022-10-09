@@ -15,7 +15,6 @@ export default function observeFunction(watch, inPage, threshold) {
 
     //observe
     var observe = new IntersectionObserver(callback, { threshold: threshold });
-
     //apply
     elements_to_watch.forEach((element) => {
         observe.observe(element);
