@@ -1,101 +1,14 @@
-/*
-Theme Name: My Theme
-Description: A basic theme
-Author: Salvatore Bosco
-Author URI: https://www.linkedin.com/in/salvatorebosco-
-Version: 0.1
-*/
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: rgb(0, 5, 36);
-    color: white;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-a{
-    color: blue;
-    text-decoration: none;
-}
-
-a:hover{
-    color: rgb(103, 103, 255);
-}
-
-button{
-    border-top-left-radius: 50%;
-    border-top-right-radius: 5%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 5%;
-    padding: 5px;
-    background-color: inherit;
-    border: 1px solid white;
-    font-size: larger;
-    margin-top: 15px;
-}
-
-button:hover{
-    background-color: rgb(0, 0, 133);
-}
-
-footer{
-    margin-top: 10px;
-    border-top: 1px solid white;
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-}
-/* navigation bar */
-.logo{
-    z-index: 999;
-    color: white;
-    position: absolute;
-    top: 15px;
-    left: 5px;
-    font-size: 25px;
-}
-.nav-tabs{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: rgb(0, 5, 37);
-    z-index: 99;
-    opacity: 0.9;
-    transition: all 1s cubic-bezier(.215, .61, .355, 1);
-}
-
-.nav-item{
+.m-10{
     margin: 10px;
-    list-style-type: none;
-}
-
-.nav-link{
-    font-size: 28px;
-}
-
-.active{
-    border-bottom: 1px solid white;
 }
 
 /* header section */
 
-header{
+header {
     height: 50%;
 }
 
-.container{
+.container {
     height: 100%;
     background-image: url(/img/background.jpg);
     background-repeat: no-repeat;
@@ -104,7 +17,7 @@ header{
     opacity: 0.1;
 }
 
-.little-bio{
+.little-bio {
     width: 100vw;
     display: flex;
     align-items: center;
@@ -114,16 +27,17 @@ header{
     height: fit-content;
 }
 
-.little-bio h1{
+.little-bio h1 {
     font-size: 60px;
 }
-.little-bio h4{
+
+.little-bio h4 {
     font-size: 25px;
 }
 
 /* section home */
 
-.home{
+.home {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,7 +45,7 @@ header{
     padding-top: 10px;
 }
 
-.card{
+.card {
     width: 90%;
     border: 1px solid white;
     border-radius: 20px;
@@ -139,7 +53,7 @@ header{
     flex-direction: row;
 }
 
-.info{
+.info {
     width: 40%;
     border-right: 1px solid white;
     display: flex;
@@ -148,7 +62,7 @@ header{
     justify-content: center;
 }
 
-.my-img{
+.my-img {
     margin-top: 10px;
     margin-bottom: 10px;
     height: 60%;
@@ -162,35 +76,36 @@ header{
     background-repeat: no-repeat;
 }
 
-.general{
+.general {
     display: flex;
     flex-direction: column;
     font-size: 30px;
 }
 
-.general a{
+.general a {
     color: white;
 }
-.general a:hover{
+
+.general a:hover {
     color: rgb(101, 124, 255);
 }
 
-.social{
+.social {
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.my-story{
+.what-i-do {
     margin-bottom: 10px;
     width: 60%;
 }
 
-.my-story h1{
+.what-i-do h1 {
     font-size: 50px;
 }
 
-.sections{
+.sections {
     margin-left: 10px;
     display: flex;
     flex-direction: column;
@@ -198,93 +113,116 @@ header{
     justify-content: center;
 }
 
-.section{
-    margin: 10px;
-}
-
-.section p{
-    margin: 10px;
-}
-
-.discover{
-    text-align: end;
-}
-/* contact me */
-
-#contact-me{
-    margin-top: 10px;
-    border-top: 1px solid white;
-    padding-top: 40vh;
-    padding-bottom: 40vh;
-}
-
-.contact{
+.section {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
 }
 
-.contact p{
+.section p {
+    margin: 10px;
+}
+
+.discover {
+    text-align: end;
+}
+
+.experience{
+    display: flex;
+    justify-content: center;
+}
+
+.exp-title{
+    width: 100%;
+    text-align: center;
+}
+
+.exp-title h1{
+    font-weight: bold;
     font-size: 50px;
 }
 
-.contact a{
-    font-size: 30px;
+.exp-container{
+    border-radius: 50px;
 }
 
-.contact li{
-    margin-bottom: 10px;
+.main{
+    width: 80%;
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-@media screen and (max-width: 768px){
-    
-    /* navigation bar */
-.logo{
-    z-index: 999;
-    color: white;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    font-size: 25px;
+.general{
+    max-width: 100%;
+    border: 1px solid blue;
+    margin: 10px;
 }
-.nav-tabs{
+
+.what{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: rgb(0, 5, 37);
-    z-index: 99;
-    opacity: 0.9;
-    transition: all 3s cubic-bezier(.215, .61, .355, 1);
 }
 
-.inPage{
-    justify-content: center;
-    
-    
+.strong{
+    font-weight: bold;
 }
 
-.nav-item{
-    margin: 5px;
-    list-style-type: none;
+.where-when{
+    margin: 15px;
 }
 
-.nav-link{
-    font-size: 20px;
-}
+@media screen and (max-width: 768px) {
 
-.active{
-    border-bottom: 1px solid white;
-}
+    /* navigation bar */
+    .logo {
+        z-index: 999;
+        color: white;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 25px;
+    }
+
+    .nav-tabs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgb(0, 5, 37);
+        z-index: 99;
+        opacity: 0.9;
+        transition: all 3s cubic-bezier(.215, .61, .355, 1);
+    }
+
+    .inPage {
+        justify-content: center;
+
+
+    }
+
+    .nav-item {
+        margin: 5px;
+        list-style-type: none;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .active {
+        border-bottom: 1px solid white;
+    }
 
 
 
-    .little-bio{
+    .little-bio {
         width: 100vw;
         display: flex;
         align-items: center;
@@ -292,16 +230,16 @@ header{
         position: absolute;
         top: 10%;
     }
-    
-    .card{
+
+    .card {
         width: 90%;
         border: 1px solid white;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
     }
-    
-    .info{
+
+    .info {
         width: 100%;
         height: 40%;
         border-bottom: 1px solid white;
@@ -311,34 +249,46 @@ header{
         justify-content: center;
 
     }
-    
-    .my-img{
+
+    .my-img {
         width: 60%;
         height: 60%;
         border: 1px solid white;
         border-radius: 20px;
         background-image: url('/img/profilo.jpeg');
     }
-    
-    .social{
+
+    .social {
         margin-bottom: 10px;
         display: flex;
         flex-direction: row;
     }
-    
-    .my-story{
+
+    .what-i-do {
         margin-bottom: 10px;
         width: 100%;
         height: 60%;
     }
-    
-    .sections{
+
+    .sections {
         margin-left: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    
+
+    .main{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    h6{
+        font-size: 16px;
+    }
+
 
 }
